@@ -21,19 +21,20 @@ let cat = {
       n++;
     }
     alert(n + "kg");
+    alert("Your cat is normal");
   },
   diet: function () {
     while (n != 4) {
       n--;
     }
     alert(n + "kg");
+    alert("Your cat is normal");
   },
   toString: function () {
-    return "Cat " + " " + this.make + " " + this.weight;
+    return "Cat " + " " + this.make + " " + n + "kg";
   },
 };
 
 alert(cat.make);
-alert(cat.check(n));
-
+cat.check(n);
 alert(cat);
